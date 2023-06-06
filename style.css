@@ -122,7 +122,7 @@ body {
 
 #about {
     font-size: 22px;
-    padding: 3rem;
+    padding: 3rem 0;
     font-weight: 400;
     letter-spacing: .5px;
     background: linear-gradient(135deg, #000, #000027);
@@ -171,4 +171,30 @@ body {
     background: linear-gradient(to bottom, #00000090, #00000090), url(assets/yogg.png);
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (max-width: 1144px) {
+    .header nav {
+        display: none;
+    }
+    
+    .header-wrapper {
+        height: initial;
+    }
+}
+
+@media screen and (max-width: 698px) {
+    .header__logo {
+        /* font-size: 30px; */
+    }
+
+    .container {
+        padding: 2rem;
+    }
+    .header {
+        padding: 2rem;
+    }
+    #about {
+        padding-top: 0;
+    }
 }
