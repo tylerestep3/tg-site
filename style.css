@@ -9,81 +9,142 @@ body {
 
 .container {
     margin: auto;
-    max-width: 1000px;
-    padding: 3rem;
+    max-width: 1100px;
+    padding: 0 3rem;
 }
 
 .header-wrapper {
-    background: linear-gradient(to bottom, #00000090, #00000090), url(assets/yogg.png);
+    background: linear-gradient(to bottom, #00000099, #00000099), url(assets/yogg.png);
     background-size: cover;
-    background-position: center;
-    height: 440px;
-    padding: 100px;
+    background-position: center 63%;
+    height: 250px;
 }
 
 .header {
-    
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
 }
 
-.header h1 {
-    margin-bottom: 3rem;
-    border-bottom: 0;
-    font-size: 60px;
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
     font-weight: 400;
 }
 
-.button-row {
-    font-size: 0;
-    display: flex;
-    justify-content: center;
-    column-gap: 1rem;
+.header__logo:hover {
+    opacity: 0.8;
 }
 
-.button-row a {
-    font-size: 20px;
-    color: #fff;
+.header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    font-size: 0;
+}
+.header nav > ul > li {
+	display: inline-block;
+	position: relative;
+	margin-left: 26px;
+}
+.header nav li a {
+	color: #fff!important;
     text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #fff;
+	font-size: 20px;
+	transition: ease-in-out 0.2s;
+}
+.header nav li a:hover, .header nav li a:focus {
+	opacity: 0.8;
+	color: #0e7fbc;
+	text-decoration: none;
+}
+
+.header nav li ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: linear-gradient(135deg, #000, #000027);
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 3px 12px rgba(0,0,0,.12);
+    margin-top: 12px;
     border-radius: 5px;
-    font-weight: 500;
-    transition: all .2s ease-out;
-    opacity: 0.9;
+    padding: .6em;
+    transition: all .3s ease-in-out;
+    transform: scale(1,0);
+    transform-origin: top;
+    z-index: 1000;
+	text-align: left;
+    left: -15px;
+    border: 1px solid #fff;
+}
+.header nav li:hover ul {
+	transform: scale(1,1);
+}
+.header nav li:hover ul, .header nav li ul:hover {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+}
+
+.header nav li ul li {
+    display: block;
+}
+.header nav li ul a {
+    color: #000;	
+    display: block;
+    padding: 8.3px 18.6px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header nav li ul a:hover {
+    color: #0e7fbc;
+}
+
+.discord-button {
+    padding: 8px 20px;
+    border: 1px solid #E6C339;
+    border-radius: 5px;
+    color: #E6C339!important;
+    opacity: 1!important;
+}
+
+.discord-button:hover {
+    background-color: #E6C339;
+    color: #000!important;
 }
 
 .button-row a:hover {
-    color: #000;
-    background-color: #fff;
-    
+    opacity: 0.8;
 }
 
-.main {
+#about {
     font-size: 24px;
     padding: 3rem;
     font-weight: 400;
     letter-spacing: .5px;
+    background: linear-gradient(135deg, #000, #000027);
 }
 
-.main p {
+#about p {
     line-height: 36px;
     opacity: 0.8;
     margin-bottom: 3rem;
 }
 
-.main h1 {
+#about h1 {
     padding-bottom: 1rem;
     border-bottom: 1px solid #fff;
 }
 
-.main h3 {
+#about h3 {
     font-size: 26px;
     letter-spacing: 1px;
 }
-
 .banner {
     max-width: 100%;
-    background-color: red;
     display: flex;
     justify-content: center;
     padding: 30px;

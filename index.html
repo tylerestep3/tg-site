@@ -8,53 +8,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <script src="https://kit.fontawesome.com/6b7f6ce08d.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="header-wrapper">
             <div class="header container">
-                <h1>THE<br>THERAMORE<br>GUARD</h1>
-                <div class="button-row">
-                    <a href="#about">About</a>
-                    <a href="#memories-block">Guild Memories</a>
-                    <a href="https://discord.gg/theramoreguard">Discord</a>
-                </div>
+                <a href="/" class="header__logo">THE THERAMORE GUARD</a>
+                <nav class="primary pull-right hidden-xs-down">
+                    <ul>
+                        
+                        <li class="p-r-1"><a href="#about">About</a></li>
+                        <li class="p-r-1"><a href="#memories">Guild Memories <i class="fa fa-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#vanilla">Vanilla</a></li>
+                                <li><a href="#tbc">TBC</a></li>
+                                <li><a href="#wotlk">WOTLK</a></li>
+                            </ul>
+                          </li>
+                        <li class="p-r-1"><a href="https://discord.gg/theramoreguard" class="discord-button">Discord</a>
+                  </nav>
             </div>
         </div>
         <div class="main-wrapper">
-            <div class="main container">
                 <div id="about">
-                    <h1>About The Guard</h1>
+                    <div class="container">
+                        <h1>About The Guard</h1>
+                        
+                        <h3>Guild History</h3>
+                        <p>We formed in September of 2019 with Greyshield as the Guild Master. The initial vision for the guild was to be a place for polite and respectful players to level and clear raid content together in fellowship.  We began with a core team of 20 raiders and a sister guild, Stormpike Militia, with whom we raided two times a week: Onyxia one night, Molten Core the other. Together, by the blessing of Jaina, we killed Onyxia, Ragnaros and then Nefarian.</p>
+                        
+                        <h3>Raiding Excellence</h3>
+                        <p>As we began our adventure into the temple of Ahn’Qiraj, we quickly realized that we needed reinforcements. We were blessed to have numerous prominent members of Sanguine join with the Guard in a joint effort to kill C’Thun and ultimately Kel’Thuzad. By the grace of Jaina, we killed the Old God and on March 14th 2021, we killed Kel’Thuzad together. The Guard continues to clear end game content together in the Wrath of the Lich King.</p>
                     
-                    <h3>Guild History</h3>
-                    <p>We formed in September of 2019 with Greyshield as the Guild Master. The initial vision for the guild was to be a place for polite and respectful players to level and clear raid content together in fellowship.  We began with a core team of 20 raiders and a sister guild, Stormpike Militia, with whom we raided two times a week: Onyxia one night, Molten Core the other. Together, by the blessing of Jaina, we killed Onyxia, Ragnaros and then Nefarian.</p>
-                    
-                    <h3>Raiding Excellence</h3>
-                    <p>As we began our adventure into the temple of Ahn’Qiraj, we quickly realized that we needed reinforcements. We were blessed to have numerous prominent members of Sanguine join with the Guard in a joint effort to kill C’Thun and ultimately Kel’Thuzad. By the grace of Jaina, we killed the Old God and on March 14th 2021, we killed Kel’Thuzad together. The Guard continues to clear end game content together in the Wrath of the Lich King.</p>
-                
-                    <h3>PvP Resilience</h3>
-                    <p>We have since become a semi-hardcore raiding guild that also enjoys world PvP, battleground, and exploration nights. Whether it is defending Halaa, claiming the Terokkar towers for the Alliance or raiding Orgrimmar with No Mercy Mafia, the Theramore Guard strives to be active in the war against the Horde.</p>
+                        <h3>PvP Resilience</h3>
+                        <p>We have since become a semi-hardcore raiding guild that also enjoys world PvP, battleground, and exploration nights. Whether it is defending Halaa, claiming the Terokkar towers for the Alliance or raiding Orgrimmar with No Mercy Mafia, the Theramore Guard strives to be active in the war against the Horde.</p>
+                    </div>
                 </div>
                 </div>
                 <div id="memories-block">
-                    <div class="vanilla banner">
+                    <div class="vanilla banner" id="vanilla">
                         <h2>VANILLA</h2>
                     </div>
                     <div class="memories container">
                         <p>Vanilla Memories</p>
                     </div>
-                    <div class="tbc banner">
+                    <div class="tbc banner" id="tbc">
                         <h2>TBC</h2>
                     </div>
                     <div class="memories container">
                         <p>TBC Memories</p>
                     </div>
-                    <div class="wotlk banner">
+                    <div class="wotlk banner" id="wotlk">
                         <h2>WOTLK</h2>
                     </div>
                     <div class="memories container">
                         <p>WOTLK Memories</p>
                     </div>
             </div>
-        </div>
     </body>
 </html>
