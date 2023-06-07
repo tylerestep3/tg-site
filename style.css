@@ -17,7 +17,6 @@ body {
     background: linear-gradient(to bottom, #00000099, #00000099), url(assets/yogg.png);
     background-size: cover;
     background-position: center 63%;
-    height: 250px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -28,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 4rem 3rem;
     position: sticky;
     top: 0;
     z-index: 100;
