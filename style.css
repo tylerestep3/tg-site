@@ -17,9 +17,6 @@ body {
     background: linear-gradient(to bottom, #00000099, #00000099), url(assets/yogg.png);
     background-size: cover;
     background-position: center 63%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     border-bottom: 1px solid #a48715;
 }
 
@@ -28,9 +25,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 4rem 3rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .header__logo {
@@ -152,6 +146,7 @@ body {
     padding-bottom: 1rem;
     border-bottom: 1px solid #fff;
     font-weight: 500;
+    font-family: "Playfair Display", serif;
 }
 
 #about h3 {
@@ -164,26 +159,40 @@ body {
     justify-content: center;
     padding: 30px;
     font-size: 26px;
+    font-weight: 500;
 }
 
 .memories p {
-    font-size: 24px
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.memories .memory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 3rem 0;
+}
+
+.memories .memory img {
+    max-width: 100%;
+    height: 100%;
 }
 
 .vanilla {
-    background: linear-gradient(to bottom, #00000090, #00000090), url(assets/og-vanilla.jpg);
+    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/og-vanilla.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .tbc {
-    background: linear-gradient(to bottom, #00000090, #00000090), url(assets/tbc.jpg);
+    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/tbc.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .wotlk {
-    background: linear-gradient(to bottom, #00000090, #00000090), url(assets/yogg.png);
+    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/yogg.png);
     background-size: cover;
     background-position: center;
 }
@@ -211,5 +220,12 @@ body {
     }
     #about {
         padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .memories .memory {
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 }
