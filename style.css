@@ -14,10 +14,9 @@ body {
 }
 
 .header-wrapper {
-    background: linear-gradient(to bottom, #00000099, #00000099), url(assets/yogg.png);
+    background: linear-gradient(to bottom, #00000099, #00000099), url(assets/yogg.jpg);
     background-size: cover;
     background-position: center 63%;
-    border-bottom: 1px solid #a48715;
 }
 
 .header {
@@ -32,6 +31,7 @@ body {
     text-decoration: none;
     font-size: 48px;
     font-weight: 400;
+    transition: all .3s ease-in-out;
 }
 
 .header__logo:hover {
@@ -61,15 +61,13 @@ body {
 }
 .header nav li a:hover, .header nav li a:focus {
 	opacity: 0.8;
-	color: #0e7fbc;
-	text-decoration: none;
 }
 
 .header nav li ul {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    background: linear-gradient(135deg, #000, #000027);
+    background: #000000;
     width: 200px;
     margin: 0 auto;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 3px 12px rgba(0,0,0,.12);
@@ -82,7 +80,7 @@ body {
     z-index: 1000;
 	text-align: left;
     left: -15px;
-    border: 1px solid #fff;
+    border: 1px solid #E6C339;
 }
 .header nav li:hover ul {
 	transform: scale(1,1);
@@ -134,6 +132,7 @@ body {
     background-position: bottom right;
     background-size: 50%;
     background-repeat: no-repeat;
+    border-top: 1px solid #a48715;
     border-bottom: 1px solid #a48715;
 }
 
@@ -158,9 +157,20 @@ body {
     max-width: 100%;
     display: flex;
     justify-content: center;
-    padding: 30px;
     font-size: 26px;
     font-weight: 500;
+    padding: 3rem;
+}
+
+.banner h2 {
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+.memories {
+    background-color: #00000099;
+    border-top: 1px solid #a48715;
+    margin-bottom: 3rem;
 }
 
 .memories p {
@@ -169,32 +179,66 @@ body {
 }
 
 .memories .memory {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 3rem 0;
 }
 
 .memories .memory img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .vanilla {
     background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/og-vanilla.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .tbc {
     background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/tbc.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .wotlk {
-    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/yogg.png);
+    background: linear-gradient(to bottom, #00000099, #000000), url(assets/yogg.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer {
+    width: 100%!important;
+    content: "";
+    display: block;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 36px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+
+.footer .container a {
+    color: #a48715;
+    text-decoration: none;
+}
+
+.footer .container a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1144px) {
@@ -225,7 +269,25 @@ body {
 
 @media screen and (max-width: 912px) {
     .memories .memory {
-        grid-template-columns: 1fr;
-        place-items: center;
+        flex-direction: column;
+    }
+    .memories .memory img {
+        max-width: 100%;
+    }
+    .banner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .banner h2 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer .container {
+        font-size: 18px;
     }
 }
