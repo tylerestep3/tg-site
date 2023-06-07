@@ -190,7 +190,7 @@ body {
 }
 
 .vanilla {
-    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/og-vanilla.jpg);
+    background: linear-gradient(to bottom, #00000099 70%, #000000), url(assets/og-vanilla.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -199,7 +199,7 @@ body {
 }
 
 .tbc {
-    background: linear-gradient(to bottom, #00000090 70%, #000000), url(assets/tbc.jpg);
+    background: linear-gradient(to bottom, #00000099 70%, #000000), url(assets/tbc.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
