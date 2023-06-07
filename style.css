@@ -134,6 +134,7 @@ body {
     background-position: bottom right;
     background-size: 50%;
     background-repeat: no-repeat;
+    border-bottom: 1px solid #a48715;
 }
 
 #about p {
