@@ -133,7 +133,6 @@ body {
     background-size: 50%;
     background-repeat: no-repeat;
     border-top: 1px solid #a48715;
-    border-bottom: 1px solid #a48715;
 }
 
 #about p {
@@ -160,6 +159,7 @@ body {
     font-size: 26px;
     font-weight: 500;
     padding: 3rem;
+    border-top: 1px solid #a48715;
 }
 
 .banner h2 {
@@ -171,6 +171,9 @@ body {
     background-color: #00000099;
     border-top: 1px solid #a48715;
     margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
 }
 
 .memories p {
@@ -181,12 +184,13 @@ body {
 .memories .memory {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
     padding: 3rem 0;
 }
 
 .memories .memory img {
-    max-width: 50%;
+    max-width: 100%;
+    min-height: 322px;
 }
 
 .vanilla {
@@ -292,11 +296,15 @@ body {
 }
 
 @media screen and (max-width: 912px) {
+    .memories {
+        grid-template-columns: 1fr;
+    }
     .memories .memory {
-        flex-direction: column;
+        padding: 1rem 0;
     }
     .memories .memory img {
         max-width: 100%;
+        min-height: initial;
     }
     .banner {
         padding-left: 0;
@@ -304,8 +312,8 @@ body {
     }
 
     .banner h2 {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         text-align: left;
     }
 }
