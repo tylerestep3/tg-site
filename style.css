@@ -203,7 +203,8 @@ body {
 
 .memories .memory img {
     max-width: 100%;
-    min-height: 322px;
+    height: 322px;
+    object-fit: cover;
 }
 
 .vanilla {
