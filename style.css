@@ -43,24 +43,28 @@ body {
 }
 
 .header nav ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     font-size: 0;
 }
-.header nav > ul > li {
-	display: inline-block;
-	position: relative;
-	margin-left: 26px;
+
+.header nav>ul>li {
+    display: inline-block;
+    position: relative;
+    margin-left: 26px;
 }
+
 .header nav li a {
-	color: #fff!important;
+    color: #fff !important;
     text-decoration: none;
-	font-size: 24px;
-	transition: ease-in-out 0.2s;
+    font-size: 24px;
+    transition: ease-in-out 0.2s;
 }
-.header nav li a:hover, .header nav li a:focus {
-	opacity: 0.8;
+
+.header nav li a:hover,
+.header nav li a:focus {
+    opacity: 0.8;
 }
 
 .header nav li ul {
@@ -70,22 +74,25 @@ body {
     background: #000000;
     width: 200px;
     margin: 0 auto;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 3px 12px rgba(0,0,0,.12);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 3px 12px rgba(0, 0, 0, .12);
     margin-top: 12px;
     border-radius: 5px;
     padding: .6em;
     transition: all .3s ease-in-out;
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     z-index: 1000;
-	text-align: left;
+    text-align: left;
     left: -15px;
     border: 1px solid #E6C339;
 }
+
 .header nav li:hover ul {
-	transform: scale(1,1);
+    transform: scale(1, 1);
 }
-.header nav li:hover ul, .header nav li ul:hover {
+
+.header nav li:hover ul,
+.header nav li ul:hover {
     opacity: 1;
     visibility: visible;
     margin-left: 0;
@@ -94,13 +101,15 @@ body {
 .header nav li ul li {
     display: block;
 }
+
 .header nav li ul a {
-    color: #000;	
+    color: #000;
     display: block;
     padding: 8.3px 18.6px;
     font-size: 18px;
     line-height: 22px;
 }
+
 .header nav li ul a:hover {
     color: #0e7fbc;
 }
@@ -109,13 +118,13 @@ body {
     padding: 8px 20px;
     border: 1px solid #E6C339;
     border-radius: 5px;
-    color: #E6C339!important;
-    opacity: 1!important;
+    color: #E6C339 !important;
+    opacity: 1 !important;
 }
 
 .discord-button:hover {
     background-color: #E6C339;
-    color: #000!important;
+    color: #000 !important;
 }
 
 .button-row a:hover {
@@ -151,10 +160,13 @@ body {
     font-size: 22px;
     letter-spacing: 1px;
 }
+
 .banner {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     font-size: 26px;
     font-weight: 500;
     padding: 3rem;
@@ -198,31 +210,22 @@ body {
     background: linear-gradient(to bottom, #00000099 70%, #000000), url(assets/og-vanilla.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 .tbc {
     background: linear-gradient(to bottom, #00000099 70%, #000000), url(assets/tbc.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 .wotlk {
     background: linear-gradient(to bottom, #00000099, #000000), url(assets/yogg.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 .footer {
-    width: 100%!important;
+    width: 100% !important;
     content: "";
     display: block;
 }
@@ -235,6 +238,7 @@ body {
     line-height: 36px;
     font-family: "Roboto", sans-serif;
     font-size: 22px;
+    padding: 3rem;
 }
 
 .footer .container a {
@@ -263,21 +267,21 @@ body {
     border: 2px solid #E6C339;
     font-family: "Roboto", sans-serif;
     transition: 0.1s
-  }
-  
-  #myBtn:hover {
-    bottom: 25px;
-  }
+}
 
-  #myBtn i {
+#myBtn:hover {
+    bottom: 25px;
+}
+
+#myBtn i {
     margin-left: 8px;
-  }
+}
 
 @media screen and (max-width: 1144px) {
     .header nav {
         display: none;
     }
-    
+
     .header-wrapper {
         height: initial;
     }
@@ -288,9 +292,11 @@ body {
     .container {
         padding: 2rem;
     }
+
     .header {
         padding: 2rem;
     }
+
     #about {
         padding-top: 0;
     }
@@ -300,10 +306,12 @@ body {
     .memories {
         grid-template-columns: 1fr;
     }
+
     .memories .memory img {
         max-width: 100%;
         min-height: initial;
     }
+
     .banner {
         padding-left: 0;
         padding-right: 0;
